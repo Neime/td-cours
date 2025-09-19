@@ -14,12 +14,13 @@ use iutspotify\Entity\PodcastTrack;
 use iutspotify\Render\AlbumTrackRenderer;
 use iutspotify\Render\AudioListRenderer;
 use iutspotify\Render\PodcastTrackRenderer;
+use iutspotify\Render\RenderInterface;
 
 $track = new AlbumTrack('Song Title', 'Artist Name');
 $podcast = new PodcastTrack('Podcast Title', 'Author Name');
 $albumRender = new AlbumTrackRenderer($track);
 $podcastRender = new PodcastTrackRenderer($podcast);
-/*
+
 echo $albumRender->render(RenderInterface::COMPACT);
 echo PHP_EOL;
 echo $podcastRender->render(RenderInterface::LONG);
@@ -42,7 +43,7 @@ echo '--Add Same Podcast';
 $playlist->addTrack($podcast);
 echo PHP_EOL;
 echo $playlist->getTrackCount();
-echo PHP_EOL;*/
+echo PHP_EOL;
 
 
 $playlist = new Playlist('My Playlist', ...[$track, $podcast]);

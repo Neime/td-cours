@@ -1,8 +1,14 @@
 <?php
 
+namespace iutspotify\Entity;
+
+use AudioTrack;
+
 require_once 'AudioTrack.php';
 require_once 'AudioList.php';
-class Playlist extends AudioList {
+
+class Playlist extends AudioList
+{
 
     public function addTrack(AudioTrack $track): void
     {

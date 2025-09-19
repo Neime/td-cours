@@ -1,6 +1,9 @@
 <?php
 
-class AudioList {
+namespace iutspotify\Entity;
+
+class AudioList
+{
     protected array $tracks = [];
 
     public function __construct(private string $name, AudioTrack ...$tracks)
@@ -10,29 +13,35 @@ class AudioList {
         $this->duration();
     }
 
-    public function countTracks(): void {
+    public function countTracks(): void
+    {
         $this->tracksCount = count($this->tracks);
     }
 
-    public function duration(): void {
-        $this->duration = array_reduce($this->tracks, function($carry, $item) {
+    public function duration(): void
+    {
+        $this->duration = array_reduce($this->tracks, function ($carry, $item) {
             return $carry + $item->duration;
         }, 0);
     }
 
-    public function getTrackCount(): int {
+    public function getTrackCount(): int
+    {
         return $this->tracksCount;
     }
 
-    public function getDuration(): int {
+    public function getDuration(): int
+    {
         return $this->duration;
     }
 
-    public function getName(): String {
+    public function getName(): string
+    {
         return $this->name;
     }
 
-    public function getTracks(): Array {
+    public function getTracks(): array
+    {
         return $this->tracks;
     }
 }

@@ -1,5 +1,9 @@
 <?php
 
+namespace iutspotify\Entity;
+
+use iutspotify\InvalidPropertyNameException;
+
 require_once  __DIR__ . '/../InvalidPropertyNameException.php';
 
 class AudioTrack

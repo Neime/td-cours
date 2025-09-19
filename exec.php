@@ -1,12 +1,19 @@
 <?php
 
-require_once 'Entity/AlbumTrack.php';
-require_once 'Entity/PodcastTrack.php';
-require_once 'Render/AlbumTrackRenderer.php';
-require_once 'Render/PodcastTrackRenderer.php';
-require_once 'Render/AudioListRenderer.php';
-require_once 'Render/RenderInterface.php';
-require_once 'Entity/Playlist.php';
+require_once 'src/classes/Entity/AlbumTrack.php';
+require_once 'src/classes/Entity/PodcastTrack.php';
+require_once 'src/classes/Render/AlbumTrackRenderer.php';
+require_once 'src/classes/Render/PodcastTrackRenderer.php';
+require_once 'src/classes/Render/AudioListRenderer.php';
+require_once 'src/classes/Render/RenderInterface.php';
+require_once 'src/classes/Entity/Playlist.php';
+
+use iutspotify\Entity\AlbumTrack;
+use iutspotify\Entity\Playlist;
+use iutspotify\Entity\PodcastTrack;
+use iutspotify\Render\AlbumTrackRenderer;
+use iutspotify\Render\AudioListRenderer;
+use iutspotify\Render\PodcastTrackRenderer;
 
 $track = new AlbumTrack('Song Title', 'Artist Name');
 $podcast = new PodcastTrack('Podcast Title', 'Author Name');

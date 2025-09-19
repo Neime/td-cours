@@ -1,5 +1,7 @@
 <?php
 
+namespace iutspotify\Entity;
+
 require_once 'AudioTrack.php';
 
 class AlbumTrack extends AudioTrack {

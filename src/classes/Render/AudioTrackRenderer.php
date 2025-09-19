@@ -1,6 +1,11 @@
 <?php
 
+namespace iutspotify\Render;
+
+use iutspotify\InvalidArgumentException;
+
 require_once 'RenderInterface.php';
+
 abstract class AudioTrackRenderer implements RenderInterface
 {
     public function render(int $selector): string
@@ -13,5 +18,6 @@ abstract class AudioTrackRenderer implements RenderInterface
     }
 
     abstract protected function compact(): string;
+
     abstract protected function long(): string;
 }

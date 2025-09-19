@@ -27,4 +27,12 @@ class AudioList {
     public function getDuration(): int {
         return $this->duration;
     }
+
+    public function getName(): String {
+        return $this->name;
+    }
+
+    public function getTracks(): Array {
+        return $this->tracks;
+    }
 }

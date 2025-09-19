@@ -2,9 +2,6 @@
 
 namespace iutspotify\Entity;
 
-require_once 'AudioTrack.php';
-require_once 'AudioList.php';
-
 class Album extends AudioList
 {
     protected array $tracks;

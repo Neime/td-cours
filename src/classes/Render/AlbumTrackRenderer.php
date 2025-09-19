@@ -1,8 +1,6 @@
 <?php
 
 namespace iutspotify\Render;
-require_once 'AudioTrackRenderer.php';
-require_once 'src/classes/Entity/AlbumTrack.php';
 
 use iutspotify\Entity\AlbumTrack;
 

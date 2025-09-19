@@ -2,8 +2,6 @@
 
 namespace iutspotify\Entity;
 
-require_once 'AudioTrack.php';
-
 class PodcastTrack extends AudioTrack {
     protected string $author;
     public function __construct(protected string $title, string $author)

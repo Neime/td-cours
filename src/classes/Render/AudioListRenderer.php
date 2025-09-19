@@ -3,7 +3,6 @@
 namespace iutspotify\Render;
 
 use iutspotify\Entity\AudioList;
-require_once 'RenderInterface.php';
 
 class AudioListRenderer implements RenderInterface
 {

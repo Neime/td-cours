@@ -2,10 +2,6 @@
 
 namespace iutspotify\Entity;
 
-require_once 'AudioTrack.php';
-require_once 'AudioList.php';
-
-
 class Playlist extends AudioList
 {
 

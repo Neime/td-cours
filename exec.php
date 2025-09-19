@@ -1,12 +1,14 @@
 <?php
 
+require_once __DIR__ . '/src/Psr4ClassLoader.php';
+/*
 require_once 'src/classes/Entity/AlbumTrack.php';
 require_once 'src/classes/Entity/PodcastTrack.php';
 require_once 'src/classes/Render/AlbumTrackRenderer.php';
 require_once 'src/classes/Render/PodcastTrackRenderer.php';
 require_once 'src/classes/Render/AudioListRenderer.php';
 require_once 'src/classes/Render/RenderInterface.php';
-require_once 'src/classes/Entity/Playlist.php';
+require_once 'src/classes/Entity/Playlist.php';*/
 
 use iutspotify\Entity\AlbumTrack;
 use iutspotify\Entity\Playlist;
@@ -15,6 +17,9 @@ use iutspotify\Render\AlbumTrackRenderer;
 use iutspotify\Render\AudioListRenderer;
 use iutspotify\Render\PodcastTrackRenderer;
 use iutspotify\Render\RenderInterface;
+
+$autoloader = new Psr4ClassLoader('iutspotify', __DIR__ . '/src/classes');
+$autoloader->register();
 
 $track = new AlbumTrack('Song Title', 'Artist Name');
 $podcast = new PodcastTrack('Podcast Title', 'Author Name');

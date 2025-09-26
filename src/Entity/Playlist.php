@@ -4,7 +4,7 @@ namespace IUT\Spotify\Entity;
 
 class Playlist extends AudioList
 {
-
+    public int $duration;
     public function addTrack(AudioTrack $track): void
     {
         $index = $this->getIndexIfTrackExist($track);

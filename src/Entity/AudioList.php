@@ -5,6 +5,7 @@ namespace IUT\Spotify\Entity;
 class AudioList
 {
     protected array $tracks = [];
+    protected int $tracksCount = 0;
 
     public function __construct(private string $name, AudioTrack ...$tracks)
     {

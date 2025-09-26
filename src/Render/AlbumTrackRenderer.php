@@ -1,8 +1,8 @@
 <?php
 
-namespace iutspotify\Render;
+namespace IUT\Spotify\Render;
 
-use iutspotify\Entity\AlbumTrack;
+use IUT\Spotify\Entity\AlbumTrack;
 
 class AlbumTrackRenderer extends AudioTrackRenderer
 {

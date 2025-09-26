@@ -1,25 +1,14 @@
 <?php
 
-require_once __DIR__ . '/src/Psr4ClassLoader.php';
-/*
-require_once 'src/classes/Entity/AlbumTrack.php';
-require_once 'src/classes/Entity/PodcastTrack.php';
-require_once 'src/classes/Render/AlbumTrackRenderer.php';
-require_once 'src/classes/Render/PodcastTrackRenderer.php';
-require_once 'src/classes/Render/AudioListRenderer.php';
-require_once 'src/classes/Render/RenderInterface.php';
-require_once 'src/classes/Entity/Playlist.php';*/
+require_once __DIR__ . '/vendor/autoload.php';
 
-use iutspotify\Entity\AlbumTrack;
-use iutspotify\Entity\Playlist;
-use iutspotify\Entity\PodcastTrack;
-use iutspotify\Render\AlbumTrackRenderer;
-use iutspotify\Render\AudioListRenderer;
-use iutspotify\Render\PodcastTrackRenderer;
-use iutspotify\Render\RenderInterface;
-
-$autoloader = new Psr4ClassLoader('iutspotify', __DIR__ . '/src/classes');
-$autoloader->register();
+use IUT\Spotify\Entity\AlbumTrack;
+use IUT\Spotify\Entity\Playlist;
+use IUT\Spotify\Entity\PodcastTrack;
+use IUT\Spotify\Render\AlbumTrackRenderer;
+use IUT\Spotify\Render\AudioListRenderer;
+use IUT\Spotify\Render\PodcastTrackRenderer;
+use IUT\Spotify\Render\RenderInterface;
 
 $track = new AlbumTrack('Song Title', 'Artist Name');
 $podcast = new PodcastTrack('Podcast Title', 'Author Name');

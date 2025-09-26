@@ -1,8 +1,8 @@
 <?php
 
-namespace iutspotify\Render;
+namespace IUT\Spotify\Render;
 
-use iutspotify\Entity\PodcastTrack;
+use IUT\Spotify\Entity\PodcastTrack;
 
 class PodcastTrackRenderer extends AudioTrackRenderer
 {

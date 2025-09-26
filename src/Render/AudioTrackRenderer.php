@@ -1,8 +1,8 @@
 <?php
 
-namespace iutspotify\Render;
+namespace IUT\Spotify\Render;
 
-use iutspotify\InvalidArgumentException;
+use IUT\Spotify\InvalidArgumentException;
 
 abstract class AudioTrackRenderer implements RenderInterface
 {

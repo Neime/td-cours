@@ -1,6 +1,6 @@
 <?php
 
-namespace iutspotify\Entity;
+namespace IUT\Spotify\Entity;
 
 class AlbumTrack extends AudioTrack {
     protected string $artist;

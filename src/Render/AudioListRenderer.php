@@ -1,8 +1,8 @@
 <?php
 
-namespace iutspotify\Render;
+namespace IUT\Spotify\Render;
 
-use iutspotify\Entity\AudioList;
+use IUT\Spotify\Entity\AudioList;
 
 class AudioListRenderer implements RenderInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace iutspotify;
+namespace IUT\Spotify;
 
 class InvalidPropertyNameException extends \Exception
 {

@@ -1,6 +1,7 @@
 <?php
 
-namespace iutspotify\Render;
+namespace IUT\Spotify\Render;
+
 interface RenderInterface
 {
     const COMPACT = 0;
